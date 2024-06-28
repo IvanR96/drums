@@ -1,6 +1,11 @@
 for(let i = 0; i < document.querySelectorAll('.drum').length; i++){
    document.querySelectorAll('.drum')[i].addEventListener('click', function (){
+      let buttonInnerHTML = this.innerHTML;
       
+      switch(buttonInnerHTML){
+         case "w":
+
+      }
       
 
    }); 
