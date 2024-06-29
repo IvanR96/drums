@@ -42,4 +42,9 @@ for(let i = 0; i < document.querySelectorAll('.drum').length; i++){
    }); 
 }
 
-      //
+// factory example
+/*function HouseKeeper(yearsOfXp, name, cleaningArea){
+   this.yearsOfXp = yearsOfXp;
+   this.name = name;
+   this.cleaningArea = cleaningArea;
+}*/
