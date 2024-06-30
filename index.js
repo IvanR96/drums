@@ -4,7 +4,7 @@ for(let i = 0; i < document.querySelectorAll('.drum').length; i++){
 
       makeSound(buttonInnerHTML);
       
-      
+      buttonAnimation(buttonInnerHTML);
       
 
    }); 
@@ -49,9 +49,23 @@ function makeSound(key){
    }
 }
 
+function buttonAnimation(currentKey){
+   let activeButton = document.querySelector("." + currentKey);
+
+   activeButton.classList.add("pressed");
+
+   setTimeout(function(){
+      activeButton.classList.remove("pressed");
+
+   }, 100);
+
+}
+
 //detect keyboard press
 document.addEventListener("keydown", function(e){
    makeSound(e.key);
+
+   buttonAnimation(e.key);
 })
 
 // factory example
